@@ -23,8 +23,8 @@ include_once "config.php";
 				$subject = "Verification code | ";
 				$link = $url.'login.php?vrf_code='.$code.'&email='.$email.'&q='.rand();
 				$message = "<b>Please <a href='$link'> click here </a> or copy this url to evrify your account .</b>$link";
-				$header = "From:vibhanshuchhangani@gmail.com\r\n";
-				$header .= "Cc:info@sabsetezkon.com\r\n";
+				$header = "From:admin@gmail.com\r\n";
+				$header .= "Cc:info@sefflyco.com\r\n";
 				$header .= "MIME-Version: 1.0\r\n";
 				$header .= "Content-type: text/html\r\n";
 				if(mail ($email,$subject,$message,$header)) {
